@@ -5,13 +5,13 @@
 const API_URL = "http://localhost:3000/api/posts";
 
 const submitNewPost = () => {
-    // HINT: Use FormData to store data to send over
-    // HINT: Redirect the user to home page after successful submission
+    // Use FormData to store data to send over
+    // Redirect the user to home page after successful submission
     const image = document.getElementById("form-post-image").files[0];
     const title = document.getElementById("form-post-title").value;
     const content = document.getElementById("form-post-content").value;
 
-    console.log(image);
+    //console.log(image);
 
     let myData = new FormData();
     myData.append("post-image", image);
